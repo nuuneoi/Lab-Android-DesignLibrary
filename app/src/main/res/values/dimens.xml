@@ -5,4 +5,11 @@
 
     <dimen name="fab_margin_right">0.1dp</dimen>
     <dimen name="fab_margin_bottom">0.1dp</dimen>
+
+    <dimen name="app_bar_height">256dp</dimen>
+    <dimen name="nav_header_height">192dp</dimen>
+
+    <dimen name="expanded_toolbar_title_margin_start">64dp</dimen>
+
+    <dimen name="nav_header_text_margin_left">16dp</dimen>
 </resources>

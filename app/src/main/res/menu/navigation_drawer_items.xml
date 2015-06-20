@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.hmkcode.mongoz.MainActivity" >
 
@@ -8,72 +7,72 @@
         <item
             android:id="@+id/navigation_item_1"
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Toolbar"/>
+            android:title="@string/txt_toolbar"/>
         <item
             android:id="@+id/navigation_item_2"
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="FloatActionButton"/>
+            android:title="@string/txt_floating_action_button"/>
 
         <item
             android:id="@+id/navigation_item_3"
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="NavigationView"/>
+            android:title="@string/txt_navigation_view"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
 
         <item
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Other"/>
+            android:title="@string/txt_other"/>
     </group>
 
 </menu>
