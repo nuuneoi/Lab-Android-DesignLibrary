@@ -1,8 +1,12 @@
 # Android Design Support Library Codelab
 
-A full tutorial on how to use Android Design Support Library.
+A full tutorial on how to use Android Design Support Library. (60 mins)
 
 ![](https://raw.githubusercontent.com/nuuneoi/Lab-Android-DesignLibrary/master/promo.jpg)
+
+The target result is
+
+![](http://inthecheesefactory.com/uploads/source/designlibrary/target.gif)
 
 Full tutorial in step by step is available at http://inthecheesefactory.com/blog/android-design-support-library-codelab
 
@@ -12,9 +16,11 @@ Sittiphol Phanvilai (nuuneoi a.k.a. Nine)
 
 Android GDE from Thailand
 
-http://inthecheesefactory.com
+Know me more through an Interactive Resume: http://nuuneoi.com/profile
 
-http://nuuneoi.com
+Company Website: http://inthecheesefactory.com
+
+Personal Website: http://nuuneoi.com
 
 # License
 
