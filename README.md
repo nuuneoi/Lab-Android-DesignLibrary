@@ -6,7 +6,7 @@ A full tutorial on how to use Android Design Support Library. (60 mins)
 
 The target result is
 
-<div style="text-align:center" markdown="1">![](http://inthecheesefactory.com/uploads/source/designlibrary/target.gif)</div>
+![](http://inthecheesefactory.com/uploads/source/designlibrary/target.gif)
 
 Full tutorial in step by step is available at http://inthecheesefactory.com/blog/android-design-support-library-codelab
 
