@@ -35,21 +35,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initToolbar() {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        // Class casting no longer needed for support library v26+
+//        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
 
     private void initInstances() {
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        // Class casting no longer needed for support library v26+
+//        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        drawerLayout = findViewById(R.id.drawerLayout);
         drawerToggle = new ActionBarDrawerToggle(MainActivity.this, drawerLayout, R.string.hello_world, R.string.hello_world);
-        drawerLayout.setDrawerListener(drawerToggle);
+        // setDrawerListener is deprecated, use addDrawerListener and removeDrawerListener instead
+//        drawerLayout.setDrawerListener(drawerToggle);
+        drawerLayout.addDrawerListener(drawerToggle);
 
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
+        // Class casting no longer needed for support library v26+
+//        rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
+        rootLayout = findViewById(R.id.rootLayout);
 
-        fabBtn = (FloatingActionButton) findViewById(R.id.fabBtn);
+        // Class casting no longer needed for support library v26+
+//        fabBtn = (FloatingActionButton) findViewById(R.id.fabBtn);
+        fabBtn = findViewById(R.id.fabBtn);
         fabBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,8 +74,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
+        // Class casting no longer needed for support library v26+
+//        collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
+        collapsingToolbarLayout = findViewById(R.id.collapsingToolbarLayout);
         collapsingToolbarLayout.setTitle("Design Library");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // setDrawerListener is deprecated, use addDrawerListener and removeDrawerListener instead
+        drawerLayout.removeDrawerListener(drawerToggle);
     }
 
     @Override

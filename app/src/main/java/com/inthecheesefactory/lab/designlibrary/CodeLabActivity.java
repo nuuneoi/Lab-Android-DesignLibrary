@@ -22,12 +22,23 @@ public class CodeLabActivity extends AppCompatActivity {
     }
 
     private void initInstances() {
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        // Class casting no longer needed for support library v26+
+//        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        drawerLayout = findViewById(R.id.drawerLayout);
         drawerToggle = new ActionBarDrawerToggle(CodeLabActivity.this, drawerLayout, R.string.hello_world, R.string.hello_world);
-        drawerLayout.setDrawerListener(drawerToggle);
+        // setDrawerListener is deprecated, use addDrawerListener and removeDrawerListener instead
+//        drawerLayout.setDrawerListener(drawerToggle);
+        drawerLayout.addDrawerListener(drawerToggle);
 
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // setDrawerListener is deprecated, use addDrawerListener and removeDrawerListener instead
+        drawerLayout.removeDrawerListener(drawerToggle);
     }
 
     @Override
