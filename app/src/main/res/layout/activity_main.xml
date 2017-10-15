@@ -74,7 +74,7 @@
                         android:hint="Password" />
                 </android.support.design.widget.TextInputLayout>
 
-                <include layout="@layout/long_content"/>
+                <include layout="@layout/long_content" />
 
             </LinearLayout>
 
@@ -84,12 +84,13 @@
             android:id="@+id/fabBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
+            android:layout_gravity="bottom|right|end"
             android:layout_marginBottom="@dimen/fab_margin_bottom"
             android:layout_marginRight="@dimen/fab_margin_right"
             android:src="@drawable/ic_plus"
             app:borderWidth="0dp"
-            app:fabSize="normal" />
+            app:fabSize="normal"
+            app:useCompatPadding="true" />
 
     </android.support.design.widget.CoordinatorLayout>
 
